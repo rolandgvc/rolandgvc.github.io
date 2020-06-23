@@ -7,7 +7,7 @@ body {
 }
 
 a, a:hover {
-    color: #a00;
+    color: #000;
     text-decoration: none;
     word-break: break-word;
 }
@@ -80,7 +80,7 @@ blockquote em {
 }
 
 a,a:hover {
-    color: #a00;
+    color: #000;
     text-decoration: none
 }
 
