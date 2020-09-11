@@ -1249,7 +1249,7 @@ a.newer-posts:hover {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   
   .wrap-content {
     padding: 0;
@@ -1257,7 +1257,7 @@ a.newer-posts:hover {
   }
 
   .content-box {
-    width: 100%;
+    width: 90%;
     padding: 10px 0px;
   }
   .post {
@@ -1282,14 +1282,25 @@ a.newer-posts:hover {
   }
   .author-name {
     font-family: 'PT Serif', serif;
-    float: left;
-    font-size: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 32px;
     color: #333030;
-    padding: 15px 8px;
+    padding: 20px 0px;
   }
+  
+  .buttons {
+   width: 100%;
+   text-align: center;
+  }
+  
   .home-button, .about-button, .talks-button{
-    padding: 20px 8px;
-    font-size: 18px;
+    padding: 0px;
+    padding-bottom: 15px;
+    width: 33%;
+    font-size: 22px;
   }
 
 }
