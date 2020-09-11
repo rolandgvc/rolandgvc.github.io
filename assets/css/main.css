@@ -1082,28 +1082,33 @@ footer .copyright{
   background-position: 50% 50%;
 }
 
-.post-preview { 
-  height: 55%;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: clip;
-  word-wrap: break-word;
-}
-
 .post .post-content {
-  padding: 1rem;
-  width: 90%;
+  padding: 10px;
+  width: 95%;
   height: 250px;
 }
 
-.post .post-content .post-date,
-.post .post-content .post-words {
-  font-size: 15px;
+.post .post-preview {
+  margin: 0;
+  padding: 0;
 }
+
+.post .post-text { 
+  height: 81%;
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.post .post-info {
+  font-size: 15px;
+  padding: 16px 0px;
+}
+
 
 .post .post-content .post-title {
   margin: 0 0 10px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -1249,7 +1254,7 @@ a.newer-posts:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   
   .wrap-content {
     padding: 0;
@@ -1274,10 +1279,12 @@ a.newer-posts:hover {
     width: 100%;
   }
   .post .post-content .post-title {
+    line-height: 100%;
     margin: 0 0 8px;
+    font-size: 25px;
   }
   .post .post-content .post-title a {
-    font-size: 21px;
+    font-size: 20px;
   }
   .author-name {
     font-family: 'PT Serif', serif;
