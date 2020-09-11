@@ -884,7 +884,6 @@ table tfoot td {
 }
 
 .wrapper {
-  /* max-width: 1250px; */
   position: relative;
 }
 
@@ -1251,13 +1250,18 @@ a.newer-posts:hover {
 
 
 @media only screen and (max-width: 800px) {
+  
+  .wrap-content {
+    padding: 0;
+    margin: 0;
+  }
+
   .content-box {
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0px;
   }
   .post {
-    width: 98%;
-    max-width: 100%;
-    margin: 2%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1266,8 +1270,7 @@ a.newer-posts:hover {
   }
   .post .post-thumbnail {
     width: 100%;
-  }
-  
+  }  
   .post .post-content {
     width: 100%;
   }
