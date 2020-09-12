@@ -920,7 +920,6 @@ table tfoot td {
 .sidebar {
   position: relative;
   margin: auto;
-  max-width: 1000px;
   padding: 0px;
   background-color: #ffffff;
   display: -webkit-box;
@@ -938,6 +937,12 @@ table tfoot td {
           justify-content: space-between;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+}
+
+.sidebar-header {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .cover-author-image {
@@ -1059,9 +1064,9 @@ footer .copyright{
   -webkit-border-radius: 10px;
           border-radius: 10px;
   overflow: hidden;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .15s ease;
+  -webkit-transition: all .13s ease;
+  -o-transition: all .13s ease;
+  transition: all .13s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
 }
@@ -1083,9 +1088,9 @@ footer .copyright{
 }
 
 .post .post-content {
-  padding: 10px;
+  padding: 20px;
   width: 95%;
-  height: 250px;
+  /* min-height: 250px; */
 }
 
 .post .post-preview {
@@ -1094,7 +1099,7 @@ footer .copyright{
 }
 
 .post .post-text { 
-  height: 81%;
+  min-height: 100px;
   width: 100%;
   overflow: hidden;
   word-wrap: break-word;
@@ -1102,7 +1107,7 @@ footer .copyright{
 
 .post .post-info {
   font-size: 15px;
-  padding: 16px 0px;
+  padding-top: 20px;
 }
 
 
@@ -1112,10 +1117,13 @@ footer .copyright{
   font-weight: 400;
 }
 
-.post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+.post a {
   text-decoration: none;
   color: #263959;
+}
+
+.post .post-content .post-title {
+  font-family: 'PT Serif', serif;
 }
 
 .post .post-content p {
